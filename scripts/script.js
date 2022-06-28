@@ -20,8 +20,12 @@ function assignUserChoice(userInput) {
     return (userChoice = "3"); // Scissors
   }
 }
-console.log(userChoice);
+getComputerChoice();
 
-function getComputerChoice() {}
-let result = Math.floor(Math.random() * 3) + 1;
-console.log(result);
+function getComputerChoice() {
+  let result = Math.floor(Math.random() * 3) + 1;
+  userChoice = userChoice + result.toString();
+  console.log(result);
+}
+
+console.log(userChoice);
