@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  border: 2px solid red;
 }
 
 html {
@@ -31,24 +30,47 @@ body {
   text-shadow: 4px 4px 4px #8f7d2d, 0 0 1em #8f7d2d;
 }
 
+.middle-container {
+  width: 100vw;
+}
+
 .content {
   display: flex;
   justify-content: space-around;
+  margin-top: 2.5%;
 }
 
 .options {
   display: flex;
-  width: 90vw;
   justify-content: space-around;
+  margin-top: 5%;
 }
 
 .choice {
   width: 25vw;
   height: auto;
   border-radius: 5%;
+  border: 4px solid #f5d547;
   transition: 0.5s;
 }
 
 .choice:hover {
   background-color: #f5d547;
+  border: 4px solid #3c3c3b;
+}
+.player-choice,
+.computer-choice {
+  width: 15vw;
+  height: auto;
+  border-radius: 5%;
+  border: 4px solid black;
+}
+.player-choice img {
+  width: 15vw;
+  height: 15vw;
+}
+
+.computer-choice img {
+  width: 15vw;
+  height: 15vw;
 }
