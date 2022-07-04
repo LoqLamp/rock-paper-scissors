@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  border: 2px solid red;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #3c3c3b;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f5d547;
+  text-shadow: 4px 4px 4px #8f7d2d, 0 0 1em #8f7d2d;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.options {
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+}
+
+.choice {
+  width: 25vw;
+  height: auto;
+  border-radius: 5%;
+  transition: 0.5s;
+}
+
+.choice:hover {
+  background-color: #f5d547;
+}
