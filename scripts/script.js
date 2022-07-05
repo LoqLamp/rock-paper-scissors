@@ -8,17 +8,14 @@ let computerScore = 0;
 const rock = document.querySelector(".rock");
 rock.addEventListener("click", function () {
   assignUserChoice("rock");
-  console.log(userChoice);
 });
 const paper = document.querySelector(".paper");
 paper.addEventListener("click", function () {
   assignUserChoice("paper");
-  console.log(userChoice);
 });
 const scissors = document.querySelector(".scissors");
 scissors.addEventListener("click", function () {
   assignUserChoice("scissors");
-  console.log(userChoice);
 });
 
 function assignUserChoice(userInput) {
@@ -86,7 +83,6 @@ function getScore() {
   ) {
     userScore++;
   }
-  console.log(userScore, computerScore);
 
   let playerScore = document.querySelector(".player-score");
   playerScore.textContent = userScore;
@@ -105,5 +101,3 @@ function getScore() {
     computerScore = 0;
   }
 }
-
-console.log(userScore, computerScore, userChoice);
